@@ -1,5 +1,5 @@
 # FrontEndProject---1---Fashe
-My first Front End template (base on JavaScript)
+My first Front End template (base on JavaScript)\n
 My main focus was on JavaScript.That is why some page may be  not responsive.
 Work I did with JS:
 These parts created by affecting DOM element
