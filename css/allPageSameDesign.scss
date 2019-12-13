@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+$font-stack: "Montserrat", sans-serif;
+$page-buttons-hover-bgcolor: #e05f4b;
+$page-buttons-bgcolor-black: #111111;
+$page-buttons-bgcolor-white: #fefefe;
+$page-paragraf-color:#757575;
+* {
+  box-sizing: border-box;
+}
+p,h1,h2,h3,a {
+  font-family: $font-stack;
+}
+h2{
+  font-weight: 700;
+}
+p{
+  color: $page-paragraf-color;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+}
+li{
+  list-style: none;
+}
+@mixin page-heading-carousel( $letter-color){
+  position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    div {
+      //this div is containing the inscription
+      width: 100%;
+      text-align: center;
+      p,
+      h3 {
+        color: $letter-color;
+      }
+      h3 {
+        font-weight: 700;
+      }
+    }
+}
+@mixin page-heading-img($url,$bg-size,$height,$header-font-size, $parag-font-size, $letter-color) {
+  position: relative;
+  background: url($url) no-repeat center;
+  background-size: $bg-size;
+  height: $height;
+  .overlay-div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    div {
+      //this div is containing the inscription
+      width: 100%;
+      text-align: center;
+      p,
+      h3 {
+        color: $letter-color;
+      }
+      h3 {
+        font-weight: 700;
+      }
+    }
+  }
+}
+@mixin img-hover-scale-effect {
+  overflow: hidden;
+  &:hover > img {
+    transform: scale(1.1);
+  }
+  img {
+    transition-duration: 0.5s;
+  }
+}
+@mixin img-hover-overlay-effect{
+  position: relative;
+  .content-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    .cover{
+        width: 100%;
+        height: 100%;
+    }
+  }
+}
+@mixin element-position-with-position-absolute($width,$left,$top) {
+  position: absolute;
+  font-size: $width;
+  left: $left;
+  top: $top;
+}
+@mixin  element-position-with-flex($justify-content,$align-item) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}
+@mixin page-buttons-style($padding,$bgColor,$hoverBgColor,$borderRadius,$fontSize,$letterColor,$letterHoverColor) {
+    padding: $padding;
+    background: $bgColor;
+    border-radius: $borderRadius;
+    font-size: $fontSize;
+    color: $letterColor;
+    transition-duration: 0.5s;
+    &:hover{
+        background: $hoverBgColor;
+        color: $letterHoverColor;
+        text-decoration:none;
+        cursor: pointer;
+    }
+}
+@mixin page-navigation{
+  ul {
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+      list-style: none;
+      font-size: 22px;
+      margin-right: 10px;
+      i {
+        color: $page-paragraf-color;
+        transition-duration: 0.5s;
+        &:hover {
+          color: #f4511e;
+        }
+      }
+      
+    }
+  }
+}
+@mixin ticket($bgColor){
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  padding: 2px 15px;
+  border-radius: 10em;
+  color: $page-buttons-bgcolor-white;
+  font-size: 12px;
+  background-color: $bgColor;
+}
+

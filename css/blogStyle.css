@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p, h1, h2, h3, a {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+p {
+  color: #757575;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.input-div input {
+  border-radius: 30px;
+  border: 1px solid #757575;
+}
+
+.categories-list ul {
+  padding: 0;
+}
+
+.categories-list ul li {
+  font-size: 15px;
+  padding: 15px 0;
+  border-top: 1px solid #757575;
+}
+
+.categories-list ul li:last-child {
+  border-bottom: 1px solid #757575;
+}
+
+.added-products-list {
+  display: block;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.product-tags .product-link {
+  font-size: 12px;
+  padding: 5px 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 20px;
+  border: 1px solid #757575;
+}
+
+.product-tags .product-link:hover {
+  border-color: #e05f4b;
+}
+/*# sourceMappingURL=blogStyle.css.map */

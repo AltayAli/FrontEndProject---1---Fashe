@@ -1,0 +1,15 @@
+@import "allPageSameDesign";
+h3{
+    font-weight: 700;
+    font-size: 15px;
+}
+.open-tab{
+    cursor: pointer;
+    transition-duration: .5s;
+    &:hover{
+        color: $page-buttons-hover-bgcolor;
+    }
+}
+.content{
+    display: none;
+}

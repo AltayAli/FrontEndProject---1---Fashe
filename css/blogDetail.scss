@@ -1,0 +1,19 @@
+@import "allPageSameDesign";
+.inputs{
+    width: 30%;
+   
+    input{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border-radius: 0px;
+        border: 1px solid $page-paragraf-color;
+    }
+}
+textarea{
+    width: 90%;
+    min-height: 150px;
+    border: 1px solid $page-paragraf-color;
+    &:hover{
+        border: 1px solid $page-paragraf-color;
+    }
+}

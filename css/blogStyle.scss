@@ -1,0 +1,38 @@
+@import "allPageSameDesign";
+.input-div{
+    input{
+        border-radius: 30px;
+        border: 1px solid $page-paragraf-color;
+    }
+}
+.categories-list{
+   ul{
+       padding: 0;
+    li{
+        font-size: 15px;
+        padding: 15px 0;
+        border-top: 1px solid $page-paragraf-color;
+    }
+    li:last-child{
+        border-bottom: 1px solid $page-paragraf-color;
+    }
+   }
+}
+.added-products-list{
+    display: block;
+    position: relative;
+    overflow-y: scroll;
+}
+.product-tags{
+   .product-link{
+       font-size: 12px;
+    padding: 5px 20px;
+    margin-right: 10px;
+    margin-top:5px;
+    border-radius: 20px;
+    border: 1px solid $page-paragraf-color;
+    &:hover{
+        border-color: $page-buttons-hover-bgcolor;
+    }
+   }
+}
